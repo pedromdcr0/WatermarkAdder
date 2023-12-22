@@ -9,13 +9,6 @@ print(output_path)
 watermark_text = None
 
 
-# def select_file():
-#     global image_path
-#     file_path = filedialog.askopenfilename(title="Choose your file:")
-#     print(file_path)
-#     return file_path
-
-
 def output_file():
     path_output = filedialog.askopenfilename(title="Output path:")
     return path_output
@@ -49,8 +42,6 @@ window = tk.Tk()
 window.title("Watermark adder")
 window.geometry("500x500")
 
-# file_button = tk.Button(window, text="Select file", command=select_file)
-# file_button.pack()
 wm_entry = tk.Entry(window, width=20)
 wm_entry.pack()
 wm_button = tk.Button(window, text="Add watermark", command=add_watermark)
